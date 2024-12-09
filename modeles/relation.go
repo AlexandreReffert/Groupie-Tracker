@@ -1,4 +1,4 @@
-package models
+package modeles
 
 type Relation struct {
     ArtistName string `json:"artist_name"` // Nom de l'artiste

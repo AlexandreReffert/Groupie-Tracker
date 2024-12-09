@@ -1,4 +1,4 @@
-package models
+package modeles
 
 type Location struct {
     LastLocation   string   `json:"last_location"`

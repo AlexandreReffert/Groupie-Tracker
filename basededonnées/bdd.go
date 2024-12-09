@@ -1,6 +1,6 @@
 package Basededonnées
 
-import "groupie-tracker/models"
+import "groupie-tracker/modeles"
 
 var Dates = []models.Date{
     {City: "New York", Date: "2024-12-01"},

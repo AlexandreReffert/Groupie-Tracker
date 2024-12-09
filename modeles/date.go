@@ -1,4 +1,4 @@
-package models
+package modeles
 
 type Date struct {
     City string `json:"city"`   // Ville du concert

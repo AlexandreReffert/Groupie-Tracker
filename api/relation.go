@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"net/http"
 	"groupie-tracker/Basededonnées"
-	"groupie-tracker/models"
+	"groupie-tracker/modeles"
 )
 
 // Endpoint pour récupérer toutes les relations
