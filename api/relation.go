@@ -10,12 +10,12 @@ import (
 // Endpoint pour récupérer toutes les relations
 func GetRelationsHandler(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
-	json.NewEncoder(w).Encode(db.Relations)
+	json.NewEncoder(w).Encode(Basededonnées.Relations)
 }
 
 // Endpoint pour ajouter une nouvelle relation
 func AddRelationHandler(w http.ResponseWriter, r *http.Request) {
-	var relation models.Relation
+	var relation modeles.Relation
 
 	// Décoder le JSON envoyé dans la requête
 	if err := json.NewDecoder(r.Body).Decode(&relation); err != nil {
@@ -24,7 +24,7 @@ func AddRelationHandler(w http.ResponseWriter, r *http.Request) {
 	}
 
 	// Ajouter la relation dans la base de données
-	db.AddRelation(relation)
+	Basededonnées.AddRelation(relation)
 
 	// Répondre avec succès
 	w.WriteHeader(http.StatusCreated)
